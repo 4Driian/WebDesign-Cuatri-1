@@ -1,0 +1,225 @@
+/*Index*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, rgb(80, 224, 243) 0%, rgba(255,255,255,1) 100%);
+  
+}
+
+h1 {
+  font-size: 5.625rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.75rem;
+  padding: 0 3.125rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+a {
+  background-color: rgb(255, 228, 106);
+  color: black;
+  padding: 0.625rem 1.5625rem;
+  text-decoration: none;
+  border: 2px solid black ;
+  border-radius: 15px;
+}
+
+.sectionp {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.transform {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 180px;
+}
+
+.transform__box {
+  width: 30%;
+  text-align: center;
+}
+/*---------------------------------------------------------------*/
+
+/*MATRIX*/
+
+.matrix {
+  display: flex;
+  margin: 0 auto;
+  padding: 319px;
+  transition: all .99s ease-in-out;
+}
+
+.matrix:hover{
+  transform: matrix(5, 0, 0, 0.2, 1,1 );
+}
+
+/*SKEW*/
+.skew {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 18.75rem;
+  transition: all .5s ease-in-out;
+}
+
+.skew:hover {
+  transform: skew(-30deg, -20deg);
+}
+
+.skew2 {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 18.75rem;
+  margin-bottom: 18rem;
+  transition: all .5s ease-in-out;
+}
+
+.skew2:hover {
+  transform: skewY(50deg);
+  /*transform: skewY(45deg)*/
+}
+
+.container-one{
+  transform: skew(5deg, 6deg);
+  width: 100%;
+  padding: 40px;
+  background: #0360CC;
+  margin-top: 40px;
+}
+
+article{
+  transform:skewY(-5deg);
+  max-width: 45%;
+  margin: auto;
+  margin-top: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 96px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+/*TRANSLATE*/
+.translate {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 18.75rem;
+  transition: all .5s ease-in-out;
+}
+
+.translate:hover {
+  transform: translate(-120px, -96px);
+}
+
+.translate2 {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 18.75rem;
+  transition: all .5s ease-in-out;
+}
+
+.translate2:hover {
+/* transform: translateX(120px);*/
+ /* transform: translateY(120px);*/
+  transform: translate3d(-120px, 50px, 100px);
+}
+
+/*ROTATE*/
+.rotate {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 300px;
+  transition: all .60s ease-in-out;
+}
+
+.rotate:hover{
+  transform:rotate(-.6turn) ;
+} 
+
+.rotate2 {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 300px;
+  transition: all .99s ease-in-out;
+}
+
+.rotate2:hover{
+  /*transform:rotateX(.2turn) ;*/
+  /*transform:rotateY(.8turn) ;*/
+  /*transform:rotatez(2turn) ;*/
+  transform: rotate3d(0, 1, 0.5, 3rad);
+} 
+
+/*SCALE*/
+.scale {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 21.875rem;
+  transition: all .5s ease-in-out;
+}
+
+.scale:hover{
+  transform: scale(6, 4);
+}
+
+.scale2 {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 21.875rem;
+  margin-bottom: 18.75rem;
+  transition: all .5s ease-in-out;
+}
+
+.scale2:hover{
+  /*transform: scaleX(-1.1);*/
+  /*transform: scaleY(-1.1);*/
+  transform: scale3d(1.5, -1.5, 3);
+}
+
+/*Skew*/
+body
+.container-one{
+  transform: skew(-5deg, 5deg);
+  width: 100%;
+  padding: 40px;
+  background: #0360CC;
+  margin-top: 40px;
+}
+
+article{
+  transform:skewY(-5deg);
+  max-width: 45%;
+  margin: auto;
+  margin-top: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 96px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+}

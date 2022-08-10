@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario Método GET</title>
+</head>
+
+<body>
+<h1>Formulario Método GET</h1>
+<!-- Acá empieza el formulario -->
+<!-- Se omite action para usar el mismo URL -->
+<form method="GET">
+    <!-- 1. Nombre -->
+    <p>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre">
+    </p>
+    <!-- 2. Correo electrónico -->
+    <p>
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email">
+    </p>
+    <!-- 3. Provincia -->
+    <p>
+    <label for="provincia">Provincia</label>
+    <select name="provincia" id="provincia">
+        <option value="">Seleccione una provincia...</option>
+        <option value="1">San José</option>
+        <option value="2">Alajuela</option>
+        <option value="3">Cartago</option>
+        <option value="4">Heredia</option>
+        <option value="5">Guanacaste</option>
+        <option value="6">Puntarenas</option>
+        <option value="7">Limón</option>
+    </select>
+    </p>
+    <!-- 4. ¿Es usted estudiante del CETAV -->
+    <fieldset>
+    <legend>¿A cuál grupo pertenece?</legend>
+    <p>
+        <input type="radio" name="grupo" id="grupo-1" value="1" checked>
+        <label for="grupo-1">Grupo 1</label>
+    </p>
+    <p>
+        <input type="radio" name="grupo" id="grupo-2" value="2">
+        <label for="grupo-2">Grupo 2</label>
+    </p>
+    </fieldset>
+    <!-- 5. Días de la semana -->
+    <fieldset>
+    <legend>Días de la semana que asiste al CETAV</legend>
+    <p>
+        <input type="checkbox" name="dias" id="dias-lunes" value="lunes">
+        <label for="dias-lunes">Lunes</label>
+    </p>
+    <p>
+        <input type="checkbox" name="dias" id="dias-martes" value="martes">
+        <label for="dias-martes">Martes</label>
+    </p>
+    <p>
+        <input type="checkbox" name="dias" id="dias-miercoles" value="miercoles">
+        <label for="dias-ercoles">Miércoles</label>
+    </p>
+    <p>
+        <input type="checkbox" name="dias" id="dias-jueves" value="jueves">
+        <label for="dias-jueves">Jueves</label>
+    </p>
+    <p>
+        <input type="checkbox" name="dias" id="dias-viernes" value="viernes">
+        <label for="dias-viernes">Viernes</label>
+    </p>
+    <p>
+        <input type="checkbox" name="dias" id="dias-sabado" value="sabado">
+        <label for="dias-sabado">Sábado</label>
+    </p>
+    </fieldset>
+    <!-- 6. Mensaje -->
+    <p>
+    <label for="mensaje">Mensaje</label>
+    <textarea name="mensaje" id="mensaje" rows="10" cols="30"></textarea>
+    </p>
+    <!-- 7. Un botón genérico que no hace nada -->
+    <p>
+    <button type="button">Este es un botón genérico</button>
+    </p>
+    <!-- 8. Botones de submit y reset -->
+    <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reiniciar">
+    </p>
+</form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica #3</title>
+</head>
+
+<body>
+<!--TABLAS-->
+    <pre> <!--Codigo fuente-->
+        <code>
+    &lt;h1&gt;Ejemplos de Tablas HTML - Tabla básica&lt;/h1&gt;
+        </code>
+    </pre><!--Fin Codigo fuente-->
+    <h1>Ejemplos de Tablas HTML - Tabla básica</h1>
+    
+    <pre><!--Codigo fuente-->
+        <code>
+&lt;table border="1"&gt;
+&lt;caption&gt;Lista de personas&lt;/caption&gt;
+        </code>
+    </pre><!--Fin Codigo fuente-->
+    <table border="1">
+    <caption>Lista de personas</caption>
+        <article> <!--Encabezado de la tabla-->
+            <thead>
+                <pre><!--Codigo fuente-->
+                    <code>
+    &lt;tr&gt;
+        &lt;th span="col" rowspan="2"&gt;Nombre&lt;/th&gt;
+        &lt;th span="col" rowspan="2"&gt;Edad&lt;/th&gt;
+        &lt;th span="col" rowspan="2"&gt;Condicion de edad&lt;/th&gt;
+        &lt;th span="col" rowspan="2"&gt;Estatura&lt;/th&gt;
+        &lt;th&gt;Condicion de estatura&lt;/th&gt;
+    &lt;/tr&gt;
+            </code>
+                </pre><!--Fin Codigo fuente-->
+                <tr>
+                    <th span="col" rowspan="2">Nombre</th>
+                    <th span="col" rowspan="2">Edad</th>
+                    <th span="col" rowspan="2">Condición de edad</th>
+                    <th span="col" rowspan="2">Estatura</th>
+                    <th>Condición de estatura</th>
+                </tr>
+            </thead>
+        </article>
+
+            <tbody>
+                <section><!--Contenido de la tabla-->
+                    <pre><!--Codigo fuente-->
+                        <code>
+    &lt;tr&gt;
+        &lt;th span="row"&gt;Carlos&lt;/th&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;Niño&lt;/td&gt;
+        &lt;td&gt;90cm&lt;/td&gt;
+        &lt;td&gt;Bajo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th span="row"&gt;Luis&lt;/th&gt;
+        &lt;td&gt;25&lt;/td&gt;
+        &lt;td&gt;Joven&lt;/td&gt;
+        &lt;td&gt;185cm&lt;/td&gt;
+        &lt;td&gt;Alto&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th span="row"&gt;Ana&lt;/th&gt;
+        &lt;td&gt;20&lt;/td&gt;
+        &lt;td&gt;Joven&lt;/td&gt;
+        &lt;td&gt;170cm&lt;/td&gt;
+        &lt;td&gt;mediano&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th span="row"&gt;Marcela&lt;/th&gt;
+        &lt;td&gt;55&lt;/td&gt;
+        &lt;td&gt;Adulto&lt;/td&gt;
+        &lt;td&gt;175cm&lt;/td&gt;
+        &lt;td&gt;Mediano&lt;/td&gt;
+    &lt;/tr&gt;
+                        </code>
+                    </pre><!--Fin Codigo fuente-->
+                    <tr>
+                        <th span="row">Carlos</th>
+                        <td>4</td>
+                        <td>Niño</td>
+                        <td>90cm</td>
+                        <td>Bajo</td>
+                    </tr>
+                    <tr>
+                        <th span="row">Luis</th>
+                        <td>25</td>
+                        <td>Joven</td>
+                        <td>185cm</td>
+                        <td>Alto</td>
+                    </tr>
+                    <tr>
+                        <th span="row">Ana</th>
+                        <td>20</td>
+                        <td>Joven</td>
+                        <td>170cm</td>
+                        <td>Mediano/a</td>
+                    </tr>
+                    <tr>
+                        <th span="row">Marcela</th>
+                        <td>55</td>
+                        <td>Adulto</td>
+                        <td>175cm</td>
+                        <td>Mediano</td>
+                    </tr>
+                </section>
+
+                <article> <!--Footer/Resumen de la tabla-->
+                    <tfoot>
+                        <pre> <!--Codigo fuente-->
+                            <code>
+    &lt;tr&gt;
+        &lt;th span="row"&gt;Personas inscritas en Total = &lt;/th&gt;
+        &lt;th span="2" colspan="4"&gt;4&lt;/th&gt;
+    &lt;tr&gt;
+&lt;/table&gt;
+                            </code>
+                        </pre><!--Fin Codigo fuente-->
+                        <tr>
+                            <th span="row">Personas inscritas en Total = </th>
+                            <th span="2" colspan="4">4</th>
+                        </tr>
+                    </tfoot>
+                </article>
+            </tbody>
+    </table>
+
+<!--Formularios-->
+<pre>
+    <code><!--Codigo fuente-->
+&lt;h2&gt;Formulario básico&lt;/h2&gt;
+    </code><!--Fin Codigo fuente-->
+</pre>
+
+<h2>Formulario básico</h2>
+    <section> <!--Inicio Formulario-->
+        <form>
+            <pre> <!--Código fuente-->
+                <code>
+&lt;fieldset&gt;
+&lt;legend&gt;¿A que carrera técnica pertenece?&lt;/legend&gt; 
+    &lt;p&gt;
+        &lt;label for="Diseño-web"&gt;Diseño-web&lt;/label&gt;
+        &lt;input type="radio" name="Carrera" id="Diseño-web"&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label for="Post&gt;Post Producción&lt;/label&gt;
+        &lt;input type="radio" name="Carrera" id="Post"&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label for="Mercadeo"&gt;Mercadeo&lt;/label&gt;
+        &lt;input type="radio" name="Carrera" id="Mercadeo"&gt;
+    &lt;/p&gt;
+&lt;/fieldset&gt;
+                </code>
+            </pre> <!--Fin Codigo fuente-->
+            <fieldset>
+            <legend>¿A que carrera técnica pertenece?</legend>
+                <p>
+                    <label for="Diseño-web">Diseño Web</label>
+                    <input type="radio" name="Carrera" id="Diseño-web">
+                </p>
+                <p>
+                    <label for="Post">Post Producción</label>
+                    <input type="radio" name="Carrera" id="Post">
+                </p>
+                <p>
+                    <label for="Mercadeo">Mercadeo</label>
+                    <input type="radio" name="Carrera" id="Mercadeo">
+                </p>
+            </fieldset>
+
+            <pre><!--Codigo fuente-->
+                <code>
+    &lt;fieldset&gt;
+    &lt;legend&gt;Dispositivos con los cuales cuenta en el hogar&lt;/legend&gt; 
+        &lt;p&gt;
+            &lt;label for="Computadora"&gt;Computadora&lt;/label&gt;
+            &lt;input type="checkbox" name="Dispositivos" id="Computadora"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="Celular&gt;Celular&lt;/label&gt;
+            &lt;input type="checkbox" name="Dispositivos" id="Celular"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="Tablet"&gt;Tablet&lt;/label&gt;
+            &lt;input type="checkbox" name="Dispositivos" id="Tablet"&gt;
+        &lt;/p&gt;
+    &lt;/fieldset&gt;
+                </code>
+            </pre><!--Fin Codigo fuente-->
+            <fieldset>
+                <legend>Dispositivos con los cuales cuenta en el hogar</legend>
+                    <p>
+                        <label for="Computadora">Computadora</label>
+                        <input type="checkbox" name="Dispositivos" id="Computadora">
+                    </p>
+                    <p>
+                        <label for="Celular">Celular</label>
+                        <input type="checkbox" name="Dispositivos" id="Celular">
+                    </p>
+                    <p>
+                        <label for="Tablet">Tablet</label>
+                        <input type="checkbox" name="Dispositivos" id="Tablet">
+                    </p>
+            </fieldset>
+
+            <pre><!--Codigo fuente-->
+                <code>
+    &lt;fieldset&gt;
+    &lt;legend&gt;Dispositivos con los cuales cuenta en el hogar&lt;/legend&gt; 
+        &lt;p&gt;
+            &lt;label for="Datos"&gt;Datos&lt;/label&gt;
+            &lt;input type="radio" name="Acceso_Internet" id="Datos"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="WI-FI&gt;WI-FI&lt;/label&gt;
+            &lt;input type="radio" name="Acceso_Internet" id="WI-FI"&gt;
+        &lt;/p&gt;
+    &lt;/fieldset&gt;
+                </code>
+            </pre><!--Fin Codigo fuente-->
+            <fieldset>
+                <legend>¿Con que tipo de acceso a la red cuenta?</legend>
+                    <p>
+                        <label for="Datos">Datos</label>
+                        <input type="radio" name="Acceso_Internet" id="Datos">
+                    </p>
+                    <p>
+                        <label for="WI-FI">WI-FI</label>
+                        <input type="radio" name="Acceso_Internet" id="WI-FI">
+                    </p>
+            </fieldset>
+    </section>
+
+    <pre> <!--Codigo fuente-->
+        <code>
+    &lt;p&gt;
+        &lt;label for="input-nombre"&gt;Nombre completo&lt;/label&gt;
+        &lt;input required id="input-nombre" type="text"&gt;
+    &lt;/p&gt;
+        </code>
+    </pre> <!--Fin Codigo fuente-->
+    <section>
+        <article>
+            <p>
+                <label for="input-nombre" >Nombre completo</label>
+                <input  required id="input-nombre" type="text">
+            </p>
+        </article>
+
+        <pre> <!--Codigo fuente-->
+            <code>
+    &lt;p&gt;
+        &lt;label for="input-email"&gt;Email&lt;/label&gt;
+        &lt;input placeholder="name@example.com" required id="input-email" type="email"&gt;
+    &lt;/p&gt;
+            </code>
+        </pre> <!--Fin Codigo fuente-->
+        <article>
+            <p>
+                <label for="input-email">Email</label>
+                <input placeholder="name@example.com" required id="input-email" type="email">
+            </p>
+        </article>
+
+        <pre> <!--Codigo fuente-->
+            <code>
+    &lt;p&gt;
+        &lt;label for="input-tel"&gt;Teléfono&lt;/label&gt;
+        &lt;input required autocomplete="tel" id="input-tel" type="number"&gt;
+    &lt;/p&gt;
+            </code>
+        </pre> <!--Fin Codigo fuente-->
+        <article>
+            <p>
+                <label  for="input-tel"> Teléfono </label>
+                <input  required autocomplete="tel" id="input-tel" type="number">
+            </p>
+        </article>
+
+        <pre> <!--Codigo fuente-->
+            <code>
+    &lt;p&gt;
+        &lt;label for="input-date"&gt;Fecha de nacimiento&lt;/label&gt;
+        &lt;input id="input-date" type="date"&gt;
+    &lt;/p&gt;
+            </code>
+        </pre> <!--Fin Codigo fuente-->
+        <article>
+            <p>
+                <label for="input-date">Fecha de nacimiento</label>
+                <input id="input-date" type="date">
+            </p>
+        </article>
+
+        <pre> <!--Codigo fuente-->
+            <code>
+    &lt;p&gt;
+        &lt;label for="Provincias" required autocomplete="Provincias"&gt;Provincia de residencia&lt;/label&gt;
+        &lt;select&gt;
+            &lt;option value="Seleccionar"&gt;Seleccionar&lt;/option&gt;
+            &lt;option value="San-José"&gt;San José&lt;/option&gt;
+            &lt;option value="Cartago"&gt;Cartago&lt;/option&gt;
+            &lt;option value="Heredia"&gt;Heredia&lt;/option&gt;
+            &lt;option value="Limón"&gt;Limón &lt;/option&gt;
+            &lt;option value="Alajuela"&gt;Alajuela&lt;/option&gt;
+            &lt;option value="Guanacaste"&gt;Guanacaste&lt;/option&gt;
+            &lt;option value="Puntarenas"&gt;Puntarenas&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/p&gt;
+            </code>
+        </pre> <!--Fin Codigo fuente-->
+        <article>
+            <p>
+                <label for="Provincias" required autocomplete="Provincias">Provincia de residencia</label>
+                <select>
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="San-José">San José</option>
+                    <option value="Cartago">Cartago</option>
+                    <option value="Heredia">Heredia</option>
+                    <option value="Limón">Limón</option>
+                    <option value="Alajuela">Alajuela</option>
+                    <option value="Guanacaste">Guanacaste</option>
+                    <option value="Puntarenas">Puntarenas</option>
+                </select>
+            </p>    
+        </article>
+
+        <pre> <!--Codigo fuente-->
+            <code>
+    &lt;p&gt;
+        &lt;label for="Estado-Civil"&gt;Estado Civil&lt;/label&gt;
+        &lt;select&gt;
+            &lt;option value="Seleccionar"&gt;Seleccionar&lt;/option&gt;
+            &lt;option value="Soltero"&gt;Soltero&lt;/option&gt;
+            &lt;option value="Casado"&gt;Casado&lt;/option&gt;
+            &lt;option value="Unión-Libre"&gt;Unión-Libre&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/p&gt;
+            </code>
+        </pre> <!--Fin Codigo fuente-->
+        <article>
+            <p>
+                <label for="Estado-Civil">Estado Civil</label>
+                <select>
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Soltero">Soltero</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Unión-Libre">Unión Libre</option>
+                </select>
+            </p>
+        </article>
+
+        <pre> <!--Codigo fuente-->
+            <code>
+    &lt;p&gt;
+        &lt;label for="foto"&gt;Fotografía pasaporte&lt;/label&gt;
+        &lt;input id="foto" type="file"&gt;
+    &lt;/p&gt;
+            </code>
+        </pre> <!--Fin Codigo fuente-->
+        <article>
+            <p>
+                <label for="foto">Fotografía pasaporte</label>
+                <input id="foto" type="file" >
+            </p>
+        </article>
+
+        <pre> <!--Codigo fuente-->
+            <code>
+    &lt;p&gt;
+        &lt;label for="mensaje"&gt;Mensaje adicional&lt;/label&gt;
+        &lt;textarea name="mensaje" id="mensaje" rows="7" cols="40"&gt;
+    &lt;/p&gt;
+            </code>
+        </pre> <!--Fin Codigo fuente-->
+        <article>   
+            <p>
+                <label for="mensaje">Mensaje adicional</label>
+                <textarea name="mensaje" id="mensaje" rows="7" cols="40"></textarea>
+            </p>
+        </article>
+
+        <pre> <!--Codigo fuente-->
+            <code>
+    &lt;p&gt;
+        &lt;button type="submit"&gt;Enviar&lt;/label&gt;
+        &lt;button type="reset"&gt;Limpiar&lt;/label&gt;
+    &lt;/p&gt;
+            </code>
+        </pre> <!--Fin Codigo fuente-->
+        <article>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </p>
+        </article>
+        </form>
+    </section>
+</body>
+</html>
